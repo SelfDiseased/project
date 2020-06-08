@@ -9,7 +9,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    height: "100%"
+    height: "100%",
+    [theme.breakpoints.down('xs')]: {
+      height: "200%",
+    },
   },
   form: {
     display: "flex",
@@ -17,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
   },
   inputField: {
-    padding: "0 0 10px 0"
+    padding: "0 0 10px 0",
   },
   submitBtn: {
     outline: "none !important"

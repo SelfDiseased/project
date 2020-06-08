@@ -9,10 +9,6 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(2),
     },
   },
-  calendar: {
-    position: "absolute", 
-    margin: "300px 0 0 0"
-  }
 }));
 
 

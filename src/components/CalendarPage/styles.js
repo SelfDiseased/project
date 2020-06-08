@@ -3,12 +3,14 @@ import { theme } from "../../theme/index";
 
 
 const useStyles = makeStyles((theme) => ({
-  calendar: {
-    position: "absolute", 
-    padding: "200px 0 0 0"
-  },
   wrapper: {
-    height: "100%"
+    height: "100%",
+    display: 'flex',
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down('xs')]: {
+      height: "200%",
+    },
   }
 }));
 

@@ -27,7 +27,7 @@ export default function CalendarPage() {
 
   return (
     <div className={classes.wrapper}>
-        {couldSeeCalendar ? <Calendar className={classes.calendar}/> : <NotFound message={"Seems like you've entered wrong code"} />}
+      {couldSeeCalendar ? <Calendar /> : <NotFound message={"Seems like you've entered wrong code"} />}
     </div>
   );
 }
